@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Praktika8</string>
+    <string name="btn1">C</string>
+    <string name="btn2">/</string>
+    <string name="btn3">7</string>
+    <string name="btn4">8</string>
+    <string name="btn5">9</string>
+    <string name="btn6">-</string>
+    <string name="btn7">4</string>
+    <string name="btn8">5</string>
+    <string name="btn9">6</string>
+    <string name="btn10">*</string>
+    <string name="btn11">1</string>
+    <string name="btn12">2</string>
+    <string name="btn13">3</string>
+    <string name="btn14">+</string>
+    <string name="btn15">=</string>
+    <string name="btn16">0</string>
+</resources>

@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Praktika14</string>
+    <string name="btn1">Ввести данные</string>
+    <string name="btn2">Изменить данные</string>
+</resources>

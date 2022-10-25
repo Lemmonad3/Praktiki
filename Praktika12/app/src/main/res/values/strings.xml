@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Praktika12</string>
+    <string name="rdbn1">Яблоко</string>
+    <string name="rdbn2">Груша</string>
+    <string name="rdbn3">Виноград</string>
+    <string name="chek1">Яблоко</string>
+    <string name="chek2">Груша</string>
+    <string name="chek3">Виноград</string>
+</resources>
