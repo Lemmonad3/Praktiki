@@ -6,42 +6,27 @@ import android.view.View
 import android.widget.TextView
 
 class MainActivity : AppCompatActivity() {
+    var buttonState: Boolean = false
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
-
+        setContentView(R.layout.linerlayout)
+        setTitle("LinerLayout")
     }
 
-    fun bt1(view: View) {
+    fun test(view: View) {
+        val button: TextView = findViewById(R.id.orient1)
+        val button1: TextView = findViewById(R.id.gravity1)
 
-        val buttonState:Boolean = false
-        val button1:TextView = findViewById(R.id.button1)
-        val button2:TextView = findViewById(R.id.button2)
-        if (buttonState){
-            button1.setVisibility(View.INVISIBLE)
-            button2.setVisibility(View.VISIBLE)
-        }
-        else
-        {
+        if(buttonState == true){
+            button.setVisibility(View.INVISIBLE)
             button1.setVisibility(View.VISIBLE)
-            button2.setVisibility(View.INVISIBLE)
-
+            buttonState = false
         }
-    }
-    fun btn2(view: View) {
-
-        val buttonState:Boolean = false
-        val button1:TextView = findViewById(R.id.button1)
-        val button2:TextView = findViewById(R.id.button2)
-        if (buttonState){
-            button1.setVisibility(View.VISIBLE)
-            button2.setVisibility(View.INVISIBLE)
-        }
-        else
-        {
+        else{
+            button.setVisibility(View.VISIBLE)
             button1.setVisibility(View.INVISIBLE)
-            button2.setVisibility(View.VISIBLE)
-
+            buttonState = true
         }
     }
 }

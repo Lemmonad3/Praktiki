@@ -19,23 +19,25 @@ class MainActivity : AppCompatActivity() {
         val dollText: EditText = findViewById(R.id.editTextNumber)
         val rubText: EditText = findViewById(R.id.editTextNumber2)
         var resultText: TextView = findViewById(R.id.textView)
-        val doll:Int = dollText.text.toString().toInt()
-        val rub = rubText.text.toString().toInt()
+        val doll:Int? = dollText.text.toString().toInt()
+        val rub:Int? = rubText.text.toString().toInt()
 
 
-         if (doll != null){
+         if (doll != null && rub != null){
 
             val result = doll * rub
              resultText.text = "Результат : $result"
 
-         } else {
-
-              val toast = Toast.makeText(this, "Введите курс обмена!", Toast.LENGTH_LONG).show()
-
          }
+        if (doll == null){
+
+            val toast = Toast.makeText(this, "Введите курс обмена!", Toast.LENGTH_LONG)
+            toast.show()
+        }
         if (rub == null){
 
-            val toast = Toast.makeText(this, "Введите сумму для обмена!", Toast.LENGTH_LONG).show()
+            val toast = Toast.makeText(this, "Введите сумму для обмена!", Toast.LENGTH_LONG)
+            toast.show()
         }
     }
 
