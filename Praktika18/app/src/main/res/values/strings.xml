@@ -1,8 +1,0 @@
-<resources>
-    <string name="app_name">Praktika18</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="rdbt1">Шотландская вислоухая</string>
-    <string name="rdbt2">Британская короткошёрстная</string>
-    <string name="rdbt3">Манчкин</string>
-</resources>
